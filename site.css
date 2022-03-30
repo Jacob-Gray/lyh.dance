@@ -1,8 +1,12 @@
+
 body, html {
+    --bgColor: hsl(36, 21%, 92%);
+    --fgColor: hsl(36, 29%, 20%);
+
     margin: 0;
     font-family: gitan-latin, sans-serif;
-    background: hsl(36, 21%, 92%);
-    color: hsl(36, 29%, 20%);
+    background: var(--bgColor);
+    color: var(--fgColor);
     font-size: 1.4vmax;
 }
 
@@ -24,9 +28,17 @@ dt {
 }
 
 main {
-    padding: 50px;
-    max-width: 500px;
     margin: auto;
+}
+
+section {
+    padding: 50px;
+    max-width: 800px;
+}
+
+section:nth-of-type(n+1) {
+    color: var(--bgColor);
+    background: var(--fgColor);
 }
 
 iframe {
