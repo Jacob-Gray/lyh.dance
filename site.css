@@ -1,4 +1,3 @@
-
 body, html {
     --bgColor: hsl(36, 21%, 92%);
     --fgColor: hsl(36, 29%, 20%);
@@ -8,6 +7,10 @@ body, html {
     background: var(--bgColor);
     color: var(--fgColor);
     font-size: 1.4vmax;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 * {
@@ -64,4 +67,10 @@ footer {
 
 iframe {
     width: 100%;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }
