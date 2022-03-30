@@ -3,7 +3,7 @@ body, html {
     font-family: gitan-latin, sans-serif;
     background: hsl(36, 21%, 92%);
     color: hsl(36, 29%, 20%);
-    font-size: 2vmax;
+    font-size: 1.4vmax;
 }
 
 * {
