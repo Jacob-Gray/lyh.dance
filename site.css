@@ -14,12 +14,12 @@ body, html {
     box-sizing: border-box;
 }
 
-h2, dt {
+h2, h1, dt {
     font-family: chennai-slab, serif;
     font-weight: lighter;
 }
 
-h2, a {
+h2, h1, a {
     color: hsl(47deg 52% 55%);
 }
 
@@ -35,12 +35,16 @@ h2 {
     font-size: 3em;
 }
 
+h1 {
+    font-size: 4em;
+}
+
 dt {
     font-size: 2em;
 }
 
 
-section:nth-of-type(n+2) {
+section:nth-of-type(odd) {
     color: var(--bgColor);
     background: var(--fgColor);
 }
