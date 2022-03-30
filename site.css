@@ -3,7 +3,11 @@ body, html {
     font-family: gitan-latin, sans-serif;
     background: hsl(36, 21%, 92%);
     color: hsl(36, 29%, 20%);
-    font-size: 1.2em;
+    font-size: 2vmax;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 h2, dt {
@@ -11,9 +15,17 @@ h2, dt {
     font-weight: lighter;
 }
 
+h2 {
+    font-size: 3em;
+}
+
+dt {
+    font-size: 2em;
+}
+
 main {
     padding: 50px;
-    max-width: 1200px;
+    max-width: 500px;
     margin: auto;
 }
 
