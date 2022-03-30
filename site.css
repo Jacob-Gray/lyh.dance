@@ -21,6 +21,7 @@ h2, dt {
 
 h2 {
     font-size: 3em;
+    color: hsl(47deg 52% 55%);
 }
 
 dt {
@@ -29,11 +30,11 @@ dt {
 
 main {
     margin: auto;
+    max-width: 800px;
 }
 
 section {
     padding: 50px;
-    max-width: 800px;
 }
 
 section:nth-of-type(n+1) {
