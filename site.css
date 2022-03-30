@@ -1,0 +1,10 @@
+body, html {
+    margin: 0;
+    font-family: gitan-latin, sans-serif;
+    background: hsl(36, 29%, 87%);
+    color: hsl(36, 29%, 20%);
+}
+
+h1 {
+    font-family: chennai-slab, serif;
+}
