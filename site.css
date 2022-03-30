@@ -1,10 +1,18 @@
 body, html {
     margin: 0;
     font-family: gitan-latin, sans-serif;
-    background: hsl(36, 29%, 87%);
+    background: hsl(36, 21%, 92%);
     color: hsl(36, 29%, 20%);
+    font-size: 1.2em;
 }
 
-h1 {
+h2, dt {
     font-family: chennai-slab, serif;
+    font-weight: lighter;
+}
+
+main {
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
 }
