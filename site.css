@@ -19,28 +19,43 @@ h2, dt {
     font-weight: lighter;
 }
 
+h2, a {
+    color: hsl(47deg 52% 55%);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 h2 {
     font-size: 3em;
-    color: hsl(47deg 52% 55%);
 }
 
 dt {
     font-size: 2em;
 }
 
-main {
-    margin: auto;
-    max-width: 800px;
-}
 
-section {
-    padding: 50px;
-}
-
-section:nth-of-type(n+1) {
+section:nth-of-type(n+2) {
     color: var(--bgColor);
     background: var(--fgColor);
 }
+
+article, footer section {
+    margin: auto;
+    max-width: 800px;
+    padding: 50px;
+}
+
+footer {
+    background: hsl(36, 29%, 15%);
+    color: var(--fgColor);
+}
+
 
 iframe {
     width: 100%;
