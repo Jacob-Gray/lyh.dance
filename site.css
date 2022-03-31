@@ -238,10 +238,17 @@ nav.scrolling .pageWidth>.button {
 @media screen and (max-width: 800px) {
     html {
         --pagePadding: 30px;
+        font-size: 1em;
     }
 
     h1 {
         font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: .8em;
     }
 }
 
