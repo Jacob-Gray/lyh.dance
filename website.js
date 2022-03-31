@@ -25,7 +25,7 @@
     function calculateScrollContainerOverflow() {
         scrollContainer.classList.toggle('overflow-left', !!scrollChild.scrollLeft);
         scrollContainer.classList.toggle('overflow-right',
-            scrollChild.getBoundingClientRect().width + scrollChild.scrollLeft < scrollChild.scrollWidth
+            Math.ceil(scrollChild.getBoundingClientRect().width + scrollChild.scrollLeft) < scrollChild.scrollWidth
         );
     }
 
