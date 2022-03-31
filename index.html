@@ -6,35 +6,93 @@
     <link rel="stylesheet" href="./site.css" />
 
     <title>Dancing in Lynchburg, VA</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
     <meta name="description" content="Find places to dance in Lynchburg, VA!" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MJDFD0VGH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7MJDFD0VGH');
+    </script>
 </head>
 
 <body>
-    <main>
-        <section>
-            <article>
-                <h1>Dancing in Lynchburg, VA</h1>
-                <p>Looking to find a place to dance? Need to get off campus for a bit? Here's a handy list of the local
-                    scenes, no partner required. 🤗</p>
+    <header id="top">
+        <section class="pageWidth">
+            <h1>Dancing in Lynchburg, VA</h1>
+            <p>Looking to find a place to dance? Need to get off campus for a bit? Here's a handy list of the local
+                scenes, no partner required. 🤗</p>
+        </section>
+    </header>
 
-                <ul>
-                    <li><a href="#hcs">💃🏻 West Coast Swing</a></li>
-                    <li><a href="#llh">🎷East Coast Swing/Lindy Hop</a></li>
-                </ul>
+    <nav>
+        <div class="pageWidth">
+            <div class="scrollContainer overflowing">
+                <div class="scrollChild">
+                    <ul>
+                        <li><a href="#llh" class="button">🎷Lindy Hop</a></li>
+                        <li><a href="#hcs" class="button">💃🏻 West Coast Swing</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="#top" class="button iconic">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
+                    <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="llh">
+            <article class="pageWidth">
+                <h2>Lynchburg Lindy Hop</h2>
+                <p>East Coast Swing and Lindy Hop dance scene focused around a weekly lesson and social dance. Lindy Hop
+                    is a partnered African-American street dance within the swing genre, originating in the late 1920s.
+                    It's
+                    charactaristic high energy combined well with the big band swing of the following decades.</p>
+
+                <p><a href="https://www.facebook.com/lynchburglindyhop/">Facebook</a></p>
+
+                <dl>
+                    <dt>When?</dt>
+                    <dd>Every <b>Tuesday night</b> at <b>8pm</b>. Lesson from 8pm-9pm, social dance until 10:30pm.</dd>
+                </dl>
+
+                <dl>
+                    <dt>How much?</dt>
+                    <dd>$5</dd>
+                </dl>
+
+                <dl>
+                    <dt>Where?</dt>
+                    <dd><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.904768965874!2d-79.1427108842663!3d37.415725740507334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b2d967e0ac85ed%3A0x886b32a4e303d635!2sRiverView%20Vinyl!5e0!3m2!1sen!2sus!4v1648649791535!5m2!1sen!2sus"
+                            height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></dd>
+                </dl>
             </article>
         </section>
 
         <section id="hcs">
-            <article>
+            <article class="pageWidth">
                 <h2>Hill City Swing</h2>
 
-                <p>West Coast Swing dance scene with weekly lessons and social dance, and monthly Saturday dances. <a
-                        href="https://www.facebook.com/hillcityswing/">Facebook</a></p>
+                <p>West Coast Swing dance scene with weekly lessons and social dance, and monthly Saturday dances. West
+                    Coast Swing is a slotted, partnered dance with roots in Lindy Hop. West Coast is danced to a broad
+                    range of music, from classic Jazz to modern Pop.</p>
+                <p><a href="https://www.facebook.com/hillcityswing/">Facebook</a></p>
 
                 <dl>
                     <dt>When?</dt>
-                    <dd>Every <i>Thursday night</i> at <i>8:30pm</i>. Intermediate lesson 8:30pm-9pm, beginner lesson
+                    <dd>Every <b>Thursday night</b> at <b>8:30pm</b>. Intermediate lesson 8:30pm-9pm, beginner lesson
                         9pm-9:30pm, social dance until 10:30pm.</dd>
                 </dl>
 
@@ -52,39 +110,20 @@
                 </dl>
             </article>
         </section>
-
-        <section id="llh">
-            <article>
-                <h2>Lynchburg Lindy Hop</h2>
-                <p>East Coast Swing and Lindy Hop dance scene with weekly lessons and social dance. <a
-                        href="https://www.facebook.com/lynchburglindyhop/">Facebook</a></p>
-
-                <dl>
-                    <dt>When?</dt>
-                    <dd>Every <i>Tuesday night</i> at <i>8pm</i>. Lessons from 8pm-9pm, social dance until 10:30pm.</dd>
-                </dl>
-
-                <dl>
-                    <dt>How much?</dt>
-                    <dd>$5</dd>
-                </dl>
-
-                <dl>
-                    <dt>Where?</dt>
-                    <dd><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.904768965874!2d-79.1427108842663!3d37.415725740507334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b2d967e0ac85ed%3A0x886b32a4e303d635!2sRiverView%20Vinyl!5e0!3m2!1sen!2sus!4v1648649791535!5m2!1sen!2sus"
-                            height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe></dd>
-                </dl>
-            </article>
-        </section>
     </main>
 
     <footer>
-        <section>
-            <p>Last updated March 30th, 2022. 💖</p>
-        </section>
+        <div class="pageWidth">
+            <p>Info incorrect? Want your group listed here? <a
+                    href="https://github.com/Jacob-Gray/lyh.dance/issues">Submit an issue!</a></p>
+
+            <p class="updateWrapper"><a class="update" href="https://github.com/Jacob-Gray/lyh.dance/commits">Loading
+                    most recent
+                    update...</a> 💖</p>
+        </div>
     </footer>
+
+    <script src="./website.js"></script>
 </body>
 
 </html>
