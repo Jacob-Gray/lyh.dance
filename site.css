@@ -4,7 +4,7 @@ html {
 
     --bgColor: hsl(36, 21%, 92%);
     --fgColor: hsl(36, 29%, 20%);
-    --accentColor: hsl(47deg 52% 55%);
+    --accentColor: hsl(47deg 52% 50%);
 
     --pagePadding: 50px;
 }
@@ -30,7 +30,7 @@ h1 {
     margin: 0;
 }
 
-p:not(:first-child) {
+p:not(:first-child), iframe {
     margin-top: 1em;
 }
 
@@ -208,6 +208,8 @@ footer {
 
 iframe {
     width: 100%;
+    border-radius: 10px;
+    border: 1px solid hsl(36, 29%, 15%);
 }
 
 /*
