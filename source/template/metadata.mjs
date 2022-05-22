@@ -30,7 +30,7 @@ export default section => {
     "description": "${section.schedule.description}",
     "organizer": {
         "@type": "Organization",
-        "name": "${section.name}",
+        "name": "${section.name}"
     }
     }
     </script>
