@@ -20,6 +20,8 @@ jobs:
       
       - name: Install Node.js
         uses: actions/setup-node@v1
+        with:
+          node-version: 18.x
 
       - name: Build site source
         run: npm run build
@@ -42,6 +44,5 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        if: github.ref_name == env.BRANCH_TO_DEPLOY
         id: deployment
         uses: actions/deploy-pages@v1
