@@ -14,5 +14,8 @@
   "bugs": {
     "url": "https://github.com/Jacob-Gray/lyh.dance/issues"
   },
-  "homepage": "https://github.com/Jacob-Gray/lyh.dance#readme"
+  "homepage": "https://github.com/Jacob-Gray/lyh.dance#readme",
+  "dependencies": {
+    "luxon": "^2.4.0"
+  }
 }

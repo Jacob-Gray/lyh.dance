@@ -6,7 +6,18 @@ export default [
         "links": {
             "fb": "https://www.facebook.com/lynchburglindyhop/",
         },
-        "schedule": "Every <b>Tuesday night</b> at <b>8pm</b>. Lesson from 8pm-9pm, social dance until 10:30pm.",
+        "schedule": {
+            "text": "Every <b>Tuesday night</b> at <b>8pm</b>. Lesson from 8pm-9pm, social dance until 10:30pm.",
+            description: "Weekly lindy hop social dance. Lesson from 8pm-9pm, social dance until 10:30pm",
+            start: {
+                weekday: 2,
+                hour: 20,
+            },
+            duration: {
+                hour: 2,
+                minute: 30,
+            }
+        },
         "cost": "$5",
         "location": {
             "name": "RiverView Vinyl",

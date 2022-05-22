@@ -1,4 +1,8 @@
-export default (section) => /* html */ `
+export default (section) => {
+    const url = new URLSearchParams();
+
+    url.set('q', section.location.name);
+    return /* html */ `
 <section id="${section.id}">
     <article class="pageWidth">
         <h2>${section.name}</h2>
@@ -24,10 +28,10 @@ export default (section) => /* html */ `
                     ${section.location.address}
                 </address>
 
-                <a href="https://www.google.com/maps?q=${section.location.address}"
+                <a href="https://www.google.com/maps?${url.toString()}"
                     target="_blank">View in maps</a>
             </dd>
         </dl>
     </article>
 </section>
-`;
+`};

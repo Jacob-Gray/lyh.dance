@@ -29,6 +29,9 @@ jobs:
         with:
           node-version: 18.x
 
+      - name: Install deps
+        run: npm i
+
       - name: Build site source
         run: npm run build
 

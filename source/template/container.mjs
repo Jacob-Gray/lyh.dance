@@ -1,9 +1,9 @@
 import sectionTemplate from './section.mjs';
+import groups from '../data/groups.mjs';
+import footer from './footer.mjs';
+import metadata from './metadata.mjs';
 
-/**
- * @param {Array} sections
- */
-export default (sections, updatedOn) => /* html */ `
+export default async () => /* html */ `
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,6 +28,8 @@ export default (sections, updatedOn) => /* html */ `
     <meta charset="UTF-8" />
     <meta name="description" content="Looking to find a place to dance? Need to get off campus for a bit? Here's a handy list of the local
     scenes, no partner required. 🤗" />
+
+    ${metadata(groups[0])}
 </head>
 
 <body>
@@ -44,7 +46,7 @@ export default (sections, updatedOn) => /* html */ `
             <div class="scrollContainer overflowing">
                 <div class="scrollChild">
                     <ul>
-                        ${sections.map(section => `<li><a href="#${section.id}" class="button">${section.name}</a></li>`).join('\n')}
+                        ${groups.map(section => `<li><a href="#${section.id}" class="button">${section.name}</a></li>`).join('\n')}
                     </ul>
                 </div>
             </div>
@@ -58,17 +60,10 @@ export default (sections, updatedOn) => /* html */ `
     </nav>
 
     <main>
-        ${sections.map(section => sectionTemplate(section)).join('\n')}
+        ${groups.map(section => sectionTemplate(section)).join('\n')}
     </main>
 
-    <footer>
-        <div class="pageWidth">
-            <p>Info incorrect? Want your group listed here? <a
-                    href="https://github.com/Jacob-Gray/lyh.dance/issues">Submit an issue!</a></p>
-
-            <p class="updateWrapper"><a class="update" href="https://github.com/Jacob-Gray/lyh.dance/commits">Last updated on ${updatedOn}</a> 💖</p>
-        </div>
-    </footer>
+    ${await footer()}
 
     <script src="./website.js"></script>
 </body>
