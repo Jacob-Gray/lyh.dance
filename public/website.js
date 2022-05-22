@@ -3,23 +3,23 @@
     const scrollContainer = scrollChild.parentElement;
     const nav = document.querySelector('nav');
 
-    const commitHook = 'https://api.github.com/repos/Jacob-Gray/lyh.dance/commits?path=index.html';
+    // const commitHook = 'https://api.github.com/repos/Jacob-Gray/lyh.dance/commits?path=index.html';
 
-    fetch(commitHook)
-        .then(r => r.json())
-        .then(d => {
-            const mostRecent = d[0];
+    // fetch(commitHook)
+    //     .then(r => r.json())
+    //     .then(d => {
+    //         const mostRecent = d[0];
 
-            if (!mostRecent) {
-                return;
-            }
+    //         if (!mostRecent) {
+    //             return;
+    //         }
 
-            const updateDate = new Date(
-                mostRecent.commit.author.date
-            );
+    //         const updateDate = new Date(
+    //             mostRecent.commit.author.date
+    //         );
 
-            document.querySelector('.update').innerHTML = `Last updated on ${updateDate.toLocaleDateString()}.`;
-        });
+    //         document.querySelector('.update').innerHTML = `Last updated on ${updateDate.toLocaleDateString()}.`;
+    //     });
 
 
     function calculateScrollContainerOverflow() {

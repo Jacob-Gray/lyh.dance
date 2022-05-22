@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2em;
+
+    --bgColor: hsl(36, 21%, 92%);
+    --fgColor: hsl(36, 29%, 20%);
+    --accentColor: hsl(47deg 52% 45%);
+
+    --pagePadding: 50px;
+}
+
+body,
+html {
+    margin: 0;
+    font-family: gitan-latin, sans-serif;
+    background: var(--bgColor);
+    color: var(--fgColor);
+    font-size: 1.2em;
+}
+
+ul,
+p,
+h2,
+h1 {
+    margin: 0;
+}
+
+p:not(:first-child), iframe {
+    margin-top: 1em;
+}
+
+h2,
+h1,
+dt {
+    font-family: chennai-slab, serif;
+    font-weight: lighter;
+}
+
+h2,
+h1,
+a {
+    color: var(--accentColor);
+}
+
+main section:nth-of-type(odd) a,
+nav a,
+footer a {
+    color: hsl(47deg 52% 60%);
+}
+
+main section:nth-of-type(even) a {
+    color: hsl(47, 36%, 34%);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2 {
+    line-height: 1.2em;
+    background-image: linear-gradient(to bottom, hsl(47deg 52% 55%), hsl(47deg 52% 45%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+dt {
+    font-size: 2em;
+}
+
+dd {
+    margin-left: 0;
+}
+
+a.button {
+    border-radius: 2em;
+    display: block;
+    padding: .3em .8em;
+    font-family: chennai-slab, serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    border: 2px solid hsl(47deg 52% 40%);
+    /* white-space: nowrap; */
+    transition: 300ms;
+}
+
+a.button.iconic {
+    padding: .3em;
+    display: flex;
+    align-items: center;
+}
+
+a.button path {
+    fill: hsl(47deg 52% 60%);
+}
+
+a.button:hover {
+    text-decoration: none;
+    border-color: var(--accentColor);
+    transform: scale(.95);
+
+}
+
+main section:nth-of-type(odd) {
+    color: var(--bgColor);
+    background: var(--fgColor);
+}
+
+.pageWidth {
+    margin: auto;
+    max-width: 700px;
+}
+
+article,
+footer .pageWidth,
+header section {
+    padding: var(--pagePadding);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    overflow: auto;
+}
+
+li {
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.scrollContainer {
+    position: relative;
+}
+
+.scrollContainer:after,
+.scrollContainer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 300ms;
+}
+
+.scrollContainer:before {
+    left: -1px;
+    background: linear-gradient(to left, hsla(36, 29%, 15%, 0), hsl(36, 29%, 15%));
+}
+
+.scrollContainer:after {
+    right: -1px;
+    background: linear-gradient(to right, hsla(36, 29%, 15%, 0), hsl(36, 29%, 15%));
+}
+
+.scrollContainer.overflow-left:before,
+.scrollContainer.overflow-right:after {
+    opacity: 1;
+}
+
+.scrollContainer .scrollChild {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    min-width: 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background: hsl(36, 29%, 15%);
+    padding: 10px .5em;
+    color: var(--bgColor);
+}
+
+li:not(:first-child) {
+    margin-left: .5em;
+}
+
+footer {
+    background: hsl(36, 29%, 15%);
+    color: var(--bgColor);
+    text-align: center;
+}
+
+.updateWrapper {
+    font-size: .7em;
+}
+
+.update {
+    color: inherit;
+}
+
+
+iframe {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid hsl(36, 29%, 15%);
+}
+
+/*
+ * Nav styling
+ */
+nav .pageWidth {
+    display: flex;
+    overflow: hidden;
+}
+
+nav .scrollContainer {
+    margin-right: .5em;
+    flex-grow: 1;
+    flex-shrink: 5;
+    min-width: 0;
+}
+
+nav .pageWidth>.button {
+    flex-shrink: 0;
+    display: none;
+}
+
+nav.scrolling .pageWidth>.button {
+    display: flex;
+    min-width: 0;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        --pagePadding: 30px;
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: .8em;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
