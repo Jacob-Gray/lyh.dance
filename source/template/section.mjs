@@ -12,7 +12,7 @@ export default (section) => {
 
         <dl>
             <dt>When?</dt>
-            <dd>${section.schedule}</dd>
+            <dd>${section.schedule.text}</dd>
         </dl>
 
         <dl>

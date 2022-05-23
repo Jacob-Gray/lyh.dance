@@ -31,7 +31,9 @@ export default [
         "links": {
             "fb": "https://www.facebook.com/hillcityswing/",
         },
-        "schedule": "Every <b>Thursday night</b> at <b>8:30pm</b>. Intermediate lesson 8:30pm-9pm, beginner lesson 9pm-9:30pm, social dance until 10:30pm.",
+        "schedule": {
+            text: "Every <b>Thursday night</b> at <b>8:30pm</b>. Intermediate lesson 8:30pm-9pm, beginner lesson 9pm-9:30pm, social dance until 10:30pm.",
+        },
         "cost": "$5",
         "location": {
             "name": "The Vibe Studio of Lynchburg",
