@@ -2,7 +2,7 @@ export default [
     {
         "id": "llh",
         "name": "Lynchburg Lindy Hop",
-        "description": "East Coast Swing and Lindy Hop dance scene focused around a weekly lesson and social dance. Lindy Hop is a partnered, African-American street dance within the swing genre, originating in the late 1920s. It's charactaristic high energy combined well with the big band swing of the following decades.",
+        "description": "East Coast Swing and Lindy Hop dance scene focused around a weekly lesson and social dance. Lindy Hop is a partnered street dance within the swing genre, originating out of the Harlem African American community in the late 1920s. It's charactaristic high energy combined well with the big band swing of the following decades.",
         "links": {
             "fb": "https://www.facebook.com/lynchburglindyhop/",
         },
