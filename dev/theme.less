@@ -1,152 +1,190 @@
-@primary1: hsl(225, 51%, 46%);
+@primary1: hsl(225, 51%, 50%);
 
 @accent1: hsl(274, 60%, 46%);
 @accent2: hsl(158, 60%, 46%);
 
-@pageBg   : lighten(@primary1, 98%, relative);
-@textColor: darken(@primary1, 70%, relative);
-
-
-body,
-html {
-    --pagePadding: 50px;
-    margin       : 0;
-    font-family  : gitan-latin, sans-serif;
-    font-size    : 1.2em;
-    color        : @textColor;
-}
-
-body {
-    background: radial-gradient(farthest-side at bottom center, fade(@primary1, 20%), fade(@primary1, 0%)),
-        radial-gradient(farthest-side at left center, fade(@accent1, 20%), fade(@accent1, 0%)),
-        radial-gradient(farthest-side at right 75%, fade(@accent2, 20%), fade(@accent2, 0%));
-    background-color: @pageBg;
-}
-
-ul,
-p,
-h2,
-h1 {
-    margin: 0;
-}
-
-p:not(:first-child) {
-    margin-top: 1em;
-}
-
-h2,
-h1,
-dt {
-    font-family: chennai-slab, serif;
-    font-weight: lighter;
-}
-
-h2,
-h1,
-a {
-    color: @primary1;
-}
-
-b {
-    color: lighten(@textColor, 10%);
-}
-
-a {
-    text-decoration: none;
-
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
-h1,
-h2 {
-    line-height            : 1.2em;
-    background-image       : linear-gradient(to bottom, @primary1, darken(@primary1, 15%));
-    background-clip        : text;
-    -webkit-background-clip: text;
-    color                  : transparent;
-}
-
-h2 {
-    font-size: 4rem;
-}
-
-h1 {
-    font-size: 6rem;
-}
-
-dt {
-    font-size: 2em;
-}
-
-dd {
-    margin-left: 0;
-}
-
-.pageWidth {
-    margin-left : auto;
-    margin-right: auto;
-
-    max-width: 700px;
-}
-
-article,
-footer .pageWidth,
-header section {
-    padding: var(--pagePadding);
-}
-
-footer {
-    text-align: center;
-
-    .updateWrapper {
-        font-size: .8em;
-    }
-}
-
-article {
-    border-radius: 10px;
-    background   : rgba(white, .3);
-    margin-top   : 50px;
-    box-shadow   : 0 0 3px fade(@primary1, 10%);
-}
-
-section:first-child article {
-    margin-top: 0;
-}
-
-
-@media screen and (max-width: 800px) {
+.theme(@pageBg, @textColor, @blockBg) {
+    body,
     html {
-        --pagePadding: 30px;
-        font-size    : 1em;
+        --pagePadding: 50px;
+        margin       : 0;
+        font-family  : gitan-latin, sans-serif;
+        font-size    : 1.2em;
     }
 
+    body {
+        background: radial-gradient(farthest-side at bottom center, fade(@primary1, 20%), fade(@primary1, 0%)),
+            radial-gradient(farthest-side at left center, fade(@accent1, 20%), fade(@accent1, 0%)),
+            radial-gradient(farthest-side at right 75%, fade(@accent2, 20%), fade(@accent2, 0%));
+        background-color: @pageBg;
+        color           : @textColor;
+    }
+
+    ul,
+    p,
+    h2,
+    h1 {
+        margin: 0;
+    }
+
+    header,
     main {
-        background: rgba(white, .3);
-        box-shadow   : 0 0 3px fade(@primary1, 10%);
+        p:not(:first-child) {
+            margin-top: 1em;
+        }
     }
 
-    article {
-        margin-top: 0;
-        background: none;
-        box-shadow: none;
+
+
+    h2,
+    h1,
+    dt {
+        font-family: chennai-slab, serif;
+        font-weight: lighter;
+    }
+
+    h2,
+    h1,
+    a {
+        color: @primary1;
+    }
+
+    b {
+        color: lighten(@textColor, 10%);
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    h1,
+    h2 {
+        line-height            : 1.2em;
+        background-image       : linear-gradient(to bottom, @primary1, darken(@primary1, 15%));
+        background-clip        : text;
+        -webkit-background-clip: text;
+        color                  : transparent;
+    }
+
+    h2 {
+        font-size: 4rem;
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 6rem;
+    }
+
+    dt {
+        font-size: 2em;
+    }
+
+    dd {
+        margin-left: 0;
+    }
+
+    .pageWidth {
+        margin-left : auto;
+        margin-right: auto;
+
+        max-width: 700px;
+    }
+
+    article,
+    footer .pageWidth,
+    header section {
+        padding: var(--pagePadding);
+    }
+
+    footer {
+        text-align: center;
+
+        .block {
+            border-radius  : 10px 10px 0 0;
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+        }
+
+        .updateWrapper {
+            font-size: .8em;
+        }
+    }
+
+    .block {
+        border-radius: 10px;
+        background   : @blockBg;
+        margin-top   : 50px;
+        box-shadow   : 0 0 3px fade(@primary1, 10%);
+    }
+
+    .button {
+        border-radius: 5px;
+        color        : @primary1;
+        background   : @pageBg linear-gradient(fade(@pageBg, 0%), darken(@pageBg, 5%));
+        border       : 1px solid darken(@pageBg, 15%);
+        padding      : 10px 15px;
+        line-height  : 1em;
+        font-size    : .8em;
+        transition   : 300ms;
+        display      : inline-block;
+
+        &:hover {
+            text-decoration : none;
+            border-color    : @primary1;
+            background-color: mix(@pageBg, @primary1, 95%);
+        }
+    }
+
+    section:first-child article {
+        margin-top: 0;
+    }
+
+
+    @media screen and (max-width: 800px) {
+        html {
+            --pagePadding: 30px;
+            font-size    : 1em;
+        }
+
+        main {
+            background: @blockBg;
+            box-shadow: 0 0 3px fade(@primary1, 10%);
+        }
+
+        article {
+            margin-top: 0;
+            background: none;
+            box-shadow: none;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        html {
+            font-size: .8em;
+        }
     }
 }
 
-@media screen and (max-width: 320px) {
-    html {
-        font-size: .8em;
-    }
+@media (prefers-color-scheme: light) {
+    .theme(
+        lighten(@primary1, 98%, relative),
+        darken(@primary1, 70%, relative),
+        rgba(white, .3)
+    );
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
+@media (prefers-color-scheme: dark) {
+    .theme(
+        darken(@primary1, 85%, relative),
+        lighten(@primary1, 65%, relative),
+        rgba(black, .3)
+    );
 }

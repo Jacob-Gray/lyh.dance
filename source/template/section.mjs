@@ -4,11 +4,11 @@ export default (section) => {
     url.set('q', section.location.name);
     return /* html */ `
 <section id="${section.id}">
-    <article class="pageWidth">
+    <article class="pageWidth block">
         <h2>${section.name}</h2>
 
         <p>${section.description}</p>
-        <p><a href="${section.links.fb}">Facebook</a></p>
+        <p><a href="${section.links.fb}" class="button">Facebook</a></p>
 
         <dl>
             <dt>When?</dt>
