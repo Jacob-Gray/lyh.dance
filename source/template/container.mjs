@@ -42,6 +42,10 @@ export default async () => /* html */ `
     </header>
 
     <main>
+        <section class="pageWidth">
+            <p class="note">Make sure you check the linked pages for an up-to-date schedule of events!</p>
+        </section>
+
         ${groups.map(section => sectionTemplate(section)).join('\n')}
     </main>
 

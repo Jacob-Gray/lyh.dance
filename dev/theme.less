@@ -3,13 +3,20 @@
 @accent1: hsl(274, 60%, 46%);
 @accent2: hsl(158, 60%, 46%);
 
+* {
+    box-sizing: border-box;
+}
+
 .theme(@pageBg, @textColor, @blockBg) {
+
     body,
     html {
         --pagePadding: 50px;
         margin       : 0;
-        font-family  : gitan-latin, sans-serif;
+        font-family  : mokoko, serif;
+        font-weight  : 300;
         font-size    : 1.2em;
+        line-height  : 1.8em;
     }
 
     body {
@@ -34,13 +41,10 @@
         }
     }
 
-
-
     h2,
     h1,
     dt {
-        font-family: chennai-slab, serif;
-        font-weight: lighter;
+        font-weight: 800;
     }
 
     h2,
@@ -61,6 +65,13 @@
         }
     }
 
+    .note {
+        background   : hsla(29, 86%, 48%, 20%);
+        padding      : 15px 15px;
+        border-radius: 10px;
+        border-left  : solid 30px hsla(29, 86%, 48%, 30%);
+    }
+
     h1,
     h2 {
         line-height            : 1.2em;
@@ -75,7 +86,7 @@
     }
 
     h1 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 
     dt {
@@ -93,7 +104,6 @@
         max-width: 700px;
     }
 
-    article,
     footer .pageWidth,
     header section {
         padding: var(--pagePadding);
@@ -119,6 +129,20 @@
         background   : @blockBg;
         margin-top   : 50px;
         box-shadow   : 0 0 3px fade(@primary1, 10%);
+
+        .block-body {
+            padding: var(--pagePadding);
+        }
+
+        .block-heading {
+            border-radius: 10px 10px 0 0;
+            overflow     : hidden;
+
+            img {
+                width  : 100%;
+                display: block;
+            }
+        }
     }
 
     .button {
@@ -127,15 +151,18 @@
         background   : @pageBg linear-gradient(fade(@pageBg, 0%), darken(@pageBg, 5%));
         border       : 1px solid darken(@pageBg, 15%);
         padding      : 10px 15px;
-        line-height  : 1em;
-        font-size    : .8em;
         transition   : 300ms;
         display      : inline-block;
+        margin-left  : 1em;
 
         &:hover {
             text-decoration : none;
             border-color    : @primary1;
             background-color: mix(@pageBg, @primary1, 95%);
+        }
+
+        &:first-of-type {
+            margin-left: 0;
         }
     }
 
@@ -174,17 +201,14 @@
 }
 
 @media (prefers-color-scheme: light) {
-    .theme(
-        lighten(@primary1, 98%, relative),
+    .theme(lighten(@primary1, 98%, relative),
         darken(@primary1, 70%, relative),
-        rgba(white, .3)
+        rgba(white, .3),
     );
 }
 
 @media (prefers-color-scheme: dark) {
-    .theme(
-        darken(@primary1, 85%, relative),
+    .theme(darken(@primary1, 85%, relative),
         lighten(@primary1, 65%, relative),
-        rgba(black, .3)
-    );
+        rgba(black, .3));
 }

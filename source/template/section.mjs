@@ -5,33 +5,41 @@ export default (section) => {
     return /* html */ `
 <section id="${section.id}">
     <article class="pageWidth block">
-        <h2>${section.name}</h2>
+        <div class="block-heading">
+            <img src="./images/${section.id}.jpg" />
+        </div>
 
-        <p>${section.description}</p>
-        <p><a href="${section.links.fb}" class="button">Facebook</a></p>
+        <div class="block-body">
+            <h2>${section.name}</h2>
 
-        <dl>
-            <dt>When?</dt>
-            <dd>${section.schedule.text}</dd>
-        </dl>
+            <p>${section.description}</p>
+            <p>${Object.keys(section.links).map(
+                name => /* html */ `<a href="${section.links[name]}" class="button">${name}</a>`
+            ).join('')}</p>
 
-        <dl>
-            <dt>How much?</dt>
-            <dd>${section.cost}</dd>
-        </dl>
+            <dl>
+                <dt>When?</dt>
+                <dd>${section.schedule.text}</dd>
+            </dl>
 
-        <dl>
-            <dt>Where?</dt>
-            <dd>
-                <address>
-                    ${section.location.name}<br>
-                    ${section.location.address}
-                </address>
+            <dl>
+                <dt>How much?</dt>
+                <dd>${section.cost}</dd>
+            </dl>
 
-                <a href="https://www.google.com/maps?${url.toString()}"
-                    target="_blank">View in maps</a>
-            </dd>
-        </dl>
+            <dl>
+                <dt>Where?</dt>
+                <dd>
+                    <address>
+                        ${section.location.name}<br>
+                        ${section.location.address}
+                    </address>
+
+                    <a href="https://www.google.com/maps?${url.toString()}"
+                        target="_blank">View in maps</a>
+                </dd>
+            </dl>
+        </div>
     </article>
 </section>
 `};
