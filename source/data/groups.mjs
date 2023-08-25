@@ -2,6 +2,7 @@ export default [
     {
         "id": "llh",
         "name": "Lynchburg Lindy Hop",
+        "header": "llh.jpg",
         "description": "East Coast Swing and Lindy Hop dance scene focused around a weekly lesson and social dance. High energy, partnered dance to the big band swing of the 1940s.",
         "links": {
             "Facebook": "https://www.facebook.com/lynchburglindyhop/",
@@ -30,7 +31,8 @@ export default [
         "name": "Hill City Swing",
         "description": "West Coast Swing dance scene with weekly lessons and social dance, and monthly Saturday dances.",
         "links": {
-            "fb": "https://www.facebook.com/hillcityswing/",
+            "Facebook": "https://www.facebook.com/hillcityswing/",
+            "Facebook Group": "https://www.facebook.com/groups/944710179511530/",
         },
         "schedule": {
             text: "Every <b>Thursday night</b> at <b>8:30pm</b>. Intermediate lesson 8:30pm-9:15pm, beginner lesson 9:15pm-10pm, social dance until 11pm.",

@@ -5,9 +5,9 @@ export default (section) => {
     return /* html */ `
 <section id="${section.id}">
     <article class="pageWidth block">
-        <div class="block-heading">
-            <img src="./images/${section.id}.jpg" />
-        </div>
+        ${section.header ? `<div class="block-heading">
+            <img src="./images/${section.header}.jpg" />
+        </div>` : '' }
 
         <div class="block-body">
             <h2>${section.name}</h2>
