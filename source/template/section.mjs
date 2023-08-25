@@ -6,7 +6,7 @@ export default (section) => {
 <section id="${section.id}">
     <article class="pageWidth block">
         ${section.header ? `<div class="block-heading">
-            <img src="./images/${section.header}.jpg" />
+            <img src="./images/${section.header}" />
         </div>` : '' }
 
         <div class="block-body">
