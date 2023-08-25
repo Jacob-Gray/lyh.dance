@@ -3,7 +3,7 @@ export default [
         "id": "llh",
         "name": "Lynchburg Lindy Hop",
         "header": "llh.jpg",
-        "description": "East Coast Swing and Lindy Hop dance scene focused around a weekly lesson and social dance. High energy, partnered dance to the big band swing of the 1940s.",
+        "description": "East Coast Swing and Lindy Hop dance scene focused around a weekly lesson and social dance. High energy, partnered dance to the swing of the mid 1900s.",
         "links": {
             "Facebook": "https://www.facebook.com/lynchburglindyhop/",
             "Facebook Group": "https://www.facebook.com/groups/lyhlindy/",
