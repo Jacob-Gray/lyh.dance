@@ -9,7 +9,7 @@ export default [
             "Facebook Group": "https://www.facebook.com/groups/lyhlindy/",
         },
         "schedule": {
-            "text": "Every <b>Tuesday night</b> at <b>8pm</b>. Lesson from 7pm-8pm, social dance until 9:30pm.",
+            "text": "Every <b>Tuesday night</b> at <b>7pm</b>. Lesson from 7pm-8pm, social dance until 9:30pm.",
             description: "Weekly lindy hop social dance. Lesson from 7pm-8pm, social dance until 9:30pm",
             start: {
                 weekday: 2,
