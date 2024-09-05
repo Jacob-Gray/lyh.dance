@@ -12,11 +12,11 @@
     body,
     html {
         --pagePadding: 50px;
-        margin       : 0;
-        font-family  : mokoko, serif;
-        font-weight  : 300;
-        font-size    : 1.2em;
-        line-height  : 1.8em;
+        margin: 0;
+        font-family: mokoko, serif;
+        font-weight: 300;
+        font-size: 1.2em;
+        line-height: 1.8em;
     }
 
     body {
@@ -24,7 +24,7 @@
             radial-gradient(farthest-side at left center, fade(@accent1, 20%), fade(@accent1, 0%)),
             radial-gradient(farthest-side at right 75%, fade(@accent2, 20%), fade(@accent2, 0%));
         background-color: @pageBg;
-        color           : @textColor;
+        color: @textColor;
     }
 
     ul,
@@ -66,19 +66,19 @@
     }
 
     .note {
-        background   : hsla(29, 86%, 48%, 20%);
-        padding      : 15px 15px;
+        background: hsla(29, 86%, 48%, 20%);
+        padding: 15px 15px;
         border-radius: 10px;
-        border-left  : solid 30px hsla(29, 86%, 48%, 30%);
+        border-left: solid 30px hsla(29, 86%, 48%, 30%);
     }
 
     h1,
     h2 {
-        line-height            : 1.2em;
-        background-image       : linear-gradient(to bottom, @primary1, darken(@primary1, 15%));
-        background-clip        : text;
+        line-height: 1.2em;
+        background-image: linear-gradient(to bottom, @primary1, darken(@primary1, 15%));
+        background-clip: text;
         -webkit-background-clip: text;
-        color                  : transparent;
+        color: transparent;
     }
 
     h2 {
@@ -98,7 +98,7 @@
     }
 
     .pageWidth {
-        margin-left : auto;
+        margin-left: auto;
         margin-right: auto;
 
         max-width: 700px;
@@ -113,10 +113,10 @@
         text-align: center;
 
         .block {
-            border-radius  : 10px 10px 0 0;
-            display        : flex;
+            border-radius: 10px 10px 0 0;
+            display: flex;
             justify-content: space-between;
-            align-items    : center;
+            align-items: center;
         }
 
         .updateWrapper {
@@ -126,9 +126,9 @@
 
     .block {
         border-radius: 10px;
-        background   : @blockBg;
-        margin-top   : 50px;
-        box-shadow   : 0 0 3px fade(@primary1, 10%);
+        background: @blockBg;
+        margin-top: 50px;
+        box-shadow: 0 0 3px fade(@primary1, 10%);
 
         .block-body {
             padding: var(--pagePadding);
@@ -136,10 +136,10 @@
 
         .block-heading {
             border-radius: 10px 10px 0 0;
-            overflow     : hidden;
+            overflow: hidden;
 
             img {
-                width  : 100%;
+                width: 100%;
                 display: block;
             }
         }
@@ -147,17 +147,17 @@
 
     .button {
         border-radius: 5px;
-        color        : @primary1;
-        background   : @pageBg linear-gradient(fade(@pageBg, 0%), darken(@pageBg, 5%));
-        border       : 1px solid darken(@pageBg, 15%);
-        padding      : 10px 15px;
-        transition   : 300ms;
-        display      : inline-block;
-        margin-left  : 1em;
+        color: @primary1;
+        background: @pageBg linear-gradient(fade(@pageBg, 0%), darken(@pageBg, 5%));
+        border: 1px solid darken(@pageBg, 15%);
+        padding: 10px 15px;
+        transition: 300ms;
+        display: inline-block;
+        margin-left: 1em;
 
         &:hover {
-            text-decoration : none;
-            border-color    : @primary1;
+            text-decoration: none;
+            border-color: @primary1;
             background-color: mix(@pageBg, @primary1, 95%);
         }
 
@@ -174,7 +174,7 @@
     @media (max-width: 800px) {
         html {
             --pagePadding: 30px;
-            font-size    : 1em;
+            font-size: 1em;
         }
 
         main {

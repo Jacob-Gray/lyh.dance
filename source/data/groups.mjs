@@ -20,7 +20,7 @@ export default [
                 minute: 30,
             }
         },
-        "cost": "$5",
+        "cost": "$5, first week of the month is free!",
         "location": {
             "name": "RiverView Vinyl",
             "address": "901 Jefferson St G3, Lynchburg, VA 24504"
