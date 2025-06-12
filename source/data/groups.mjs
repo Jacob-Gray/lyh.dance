@@ -23,13 +23,13 @@ export default [
         "cost": "$5, first week of the month is free!",
         "location": {
             "name": "RiverView Vinyl",
-            "address": "901 Jefferson St G3, Lynchburg, VA 24504"
+            "address": "409 Fifth St, Lynchburg, VA 24504"
         }
     },
     {
         "id": "hcs",
         "name": "Hill City Swing",
-        "description": "West Coast Swing dance scene with weekly lessons and social dance, and monthly Saturday dances.",
+        "description": "<b>On break for the summer! Check FB page.</b> West Coast Swing dance scene with weekly lessons and social dance, and monthly Saturday dances.",
         "links": {
             "Facebook": "https://www.facebook.com/hillcityswing/",
             "Facebook Group": "https://www.facebook.com/groups/944710179511530/",
