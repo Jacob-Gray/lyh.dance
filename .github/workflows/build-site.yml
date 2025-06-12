@@ -27,7 +27,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: latest
+          node-version: lts/*
 
       - name: Install deps
         run: npm i
