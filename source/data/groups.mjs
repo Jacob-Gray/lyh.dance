@@ -37,7 +37,7 @@ export default [
         "schedule": {
             text: "Every <b>Thursday night</b> at <b>8:30pm</b>. Intermediate lesson 8:30pm-9:15pm, beginner lesson 9:15pm-10pm, social dance until 11pm.",
         },
-        "cost": "$5",
+        "cost": "$10",
         "location": {
             "name": "Live Move Be Fitness Studio",
             "address": "22273 Timberlake Rd Lynchburg, VA 24502"
