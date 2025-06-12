@@ -23,23 +23,19 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
-          cache: 'npm'  # speeds up CI builds
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci  # safer & faster than `npm i` in CI
+        run: npm ci
 
-      - name: Build site source
+      - name: Build site
         run: npm run build
 
-      - name: Create tar for GitHub Pages
-        run: tar --dereference --hard-dereference --directory public/ -cvf artifact.tar .
-
-      - name: Upload artifact for GitHub Pages
-        uses: actions/upload-artifact@v4  # use stable version
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          name: github-pages
-          path: ./artifact.tar
-          if-no-files-found: error
+          path: './public'
+
 
   deploy:
     runs-on: ubuntu-latest
@@ -51,3 +47,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+
