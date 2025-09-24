@@ -29,13 +29,13 @@ export default [
     {
         "id": "hcs",
         "name": "Hill City Swing",
-        "description": "<b>On break for the summer! Check FB page.</b> West Coast Swing dance scene with weekly lessons and social dance, and monthly Saturday dances.",
+        "description": "West Coast Swing dance scene with weekly lessons and social dance, and monthly Saturday dances.",
         "links": {
             "Facebook": "https://www.facebook.com/hillcityswing/",
             "Facebook Group": "https://www.facebook.com/groups/944710179511530/",
         },
         "schedule": {
-            text: "Every <b>Thursday night</b> at <b>8:30pm</b>. Intermediate lesson 8:30pm-9:15pm, beginner lesson 9:15pm-10pm, social dance until 11pm.",
+            text: "Every <b>Thursday night</b> at <b>8:30pm</b>. Intermediate lesson 8:30pm-9:15pm (Must test in to attend), beginner lesson 9:15pm-10pm, social dance until 11pm.",
         },
         "cost": "$10",
         "location": {
