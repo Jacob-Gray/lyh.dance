@@ -24,7 +24,7 @@ export default (section) => {
 
             <dl>
                 <dt>How much?</dt>
-                <dd>${section.cost}</dd>
+                <dd>${section.costText ?? (typeof section.cost === 'number' ? `$${section.cost}` : section.cost)}</dd>
             </dl>
 
             <dl>

@@ -29,7 +29,7 @@ export default async () => /* html */ `
     <meta name="description" content="Looking to find a place to dance? Need to get off campus for a bit? Here's a handy list of the local
     scenes, no partner required. 🤗" />
 
-    ${metadata(groups[0])}
+    ${groups.filter(g => g.schedule).map(g => metadata(g)).join('\n')}
 </head>
 
 <body>
