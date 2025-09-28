@@ -26,10 +26,15 @@ export default section => {
     const startTimeStr = `${pad2(Math.floor(startMinutes / 60))}:${pad2(startMinutes % 60)}`;
     const endTimeStr = `${pad2(Math.floor(endMinutes / 60))}:${pad2(endMinutes % 60)}`;
 
+    // Use a past date indicating when this weekly series started
+    // Google will understand it's ongoing based on the eventSchedule
+    const seriesStartDate = new Date('2024-01-01T00:00:00.000Z');
+
     const metadata = {
         "@context": "https://schema.org",
         "@type": "DanceEvent",
         name: `${section.name} weekly dance`,
+        startDate: seriesStartDate.toISOString(),
         eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
         eventStatus: "https://schema.org/EventScheduled",
         location: {
