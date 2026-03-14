@@ -137,6 +137,13 @@ footer {
   background: @blockBg;
   margin-top: 50px;
   box-shadow: 0 0 3px fade(@primary1, 10%);
+  border: 2px solid transparent;
+  transition: border-color 300ms, box-shadow 300ms;
+
+  section:target > & {
+    border-color: @primary1;
+    box-shadow: 0 0 15px fade(@primary1, 30%);
+  }
 
   .block-body {
     padding: 20px var(--pagePadding);

@@ -104,6 +104,12 @@ footer .updateWrapper {
   background: rgba(255, 255, 255, 0.3);
   margin-top: 50px;
   box-shadow: 0 0 3px hsla(225, 51%, 50%, 0.1);
+  border: 2px solid transparent;
+  transition: border-color 300ms, box-shadow 300ms;
+}
+section:target > .block {
+  border-color: hsl(225, 51%, 50%);
+  box-shadow: 0 0 15px hsla(225, 51%, 50%, 0.3);
 }
 .block .block-body {
   padding: 20px var(--pagePadding);
