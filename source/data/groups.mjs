@@ -28,7 +28,7 @@ export default [
         }
     },
     {
-        id: "hcs",
+        id: "lw",
         name: "Lynchburg Westies",
         description: "West Coast Swing dance scene with a bi-weekly lesson and social dance. A smooth, versatile partnered dance style that works with a wide range of contemporary music.",
         links: {
