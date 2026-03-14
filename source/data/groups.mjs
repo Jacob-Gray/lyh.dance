@@ -2,7 +2,7 @@ export default [
     {
         id: "llh",
         name: "Lynchburg Lindy Hop",
-        header: "llh.jpg",
+        header: "llh2.jpeg",
         description: "East Coast Swing and Lindy Hop dance scene focused around a weekly lesson and social dance. High energy, partnered dance to the swing of the mid 1900s.",
         links: {
             Facebook: "https://www.facebook.com/lynchburglindyhop/",
@@ -29,27 +29,28 @@ export default [
     },
     {
         id: "hcs",
-        name: "Hill City Swing",
-        description: "West Coast Swing dance scene with weekly lessons and social dance, and monthly Saturday dances.",
+        name: "Lynchburg Westies",
+        description: "West Coast Swing dance scene with a bi-weekly lesson and social dance. A smooth, versatile partnered dance style that works with a wide range of contemporary music.",
         links: {
             Facebook: "https://www.facebook.com/hillcityswing/",
             "Facebook Group": "https://www.facebook.com/groups/944710179511530/",
         },
         schedule: {
-            text: "Every <b>Thursday night</b> at <b>8:30pm</b>. Intermediate lesson 8:30pm-9:15pm (Must test in to attend), beginner lesson 9:15pm-10pm, social dance until 11pm.",
+            text: "Bi-weekly <b>Thursday night</b> at <b>8:40pm</b>. Beginner lesson 8:40-9:30pm, social dance 9:30-10:30pm.",
             start: {
                 weekday: 4,
                 hour: 20,
-                minute: 30,
+                minute: 40,
             },
             duration: {
-                hour: 2,
-                minute: 30,
+                hour: 1,
+                minute: 50,
             }
         },
-        cost: 10,
+        cost: 8,
+        costText: "$8 General Entry, $5 with valid student ID.",
         location: {
-            name: "Live Move Be Fitness Studio",
+            name: "Live Move Be Fitness",
             address: "22273 Timberlake Rd Lynchburg, VA 24502"
         }
     }

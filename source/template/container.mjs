@@ -8,11 +8,10 @@ export default async () => /* html */ `
 <html lang="en">
 
 <head>
-    <link rel="preload" href="https://use.typekit.net/upg5mvd.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://use.typekit.net/upg5mvd.css" />
-    </noscript>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap">
+
 
     <link rel="stylesheet" href="./site.css" />
 
