@@ -17,7 +17,7 @@ export default (section) => {
         </div>` : '' }
 
         <div class="block-body">
-            <h2>${section.name}</h2>
+            <h2><a href="#${section.id}">${section.name}</a></h2>
 
             <p>${section.description}</p>
             <p>${Object.keys(section.links).map(
