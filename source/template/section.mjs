@@ -20,9 +20,9 @@ export default (section) => {
             <h2><a href="#${section.id}">${section.name}</a></h2>
 
             <p>${section.description}</p>
-            <p>${Object.keys(section.links).map(
+            <div class="buttons">${Object.keys(section.links).map(
                 name => /* html */ `<a href="${section.links[name]}" class="button">${name}</a>`
-            ).join('')}</p>
+            ).join('')}</div>
 
             <dl>
                 <dt>${icons.schedule} When?</dt>

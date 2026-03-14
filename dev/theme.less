@@ -170,6 +170,12 @@ footer {
   }
 }
 
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .button {
   border-radius: 10px;
   color: @primary1;
@@ -177,17 +183,11 @@ footer {
   border: 1px solid darken(@pageBg, 15%);
   padding: 10px 15px;
   transition: 300ms;
-  display: inline-block;
-  margin-left: 1em;
 
   &:hover {
     text-decoration: none;
     border-color: @primary1;
     background-color: mix(@pageBg, @primary1, 95%);
-  }
-
-  &:first-of-type {
-    margin-left: 0;
   }
 }
 

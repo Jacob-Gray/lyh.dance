@@ -131,6 +131,11 @@ section:target > .block {
   object-fit: cover;
   display: block;
 }
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
 .button {
   border-radius: 10px;
   color: hsl(225, 51%, 50%);
@@ -138,16 +143,11 @@ section:target > .block {
   border: 1px solid hsl(225, 51%, 84%);
   padding: 10px 15px;
   transition: 300ms;
-  display: inline-block;
-  margin-left: 1em;
 }
 .button:hover {
   text-decoration: none;
   border-color: hsl(225, 51%, 50%);
   background-color: #f2f4fb;
-}
-.button:first-of-type {
-  margin-left: 0;
 }
 section:first-child article {
   margin-top: 0;
