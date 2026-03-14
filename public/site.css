@@ -17,6 +17,7 @@ body {
   background: radial-gradient(farthest-side at bottom center, hsla(225, 51%, 50%, 0.2), hsla(225, 51%, 50%, 0)), radial-gradient(farthest-side at left center, hsla(274, 60%, 46%, 0.2), hsla(274, 60%, 46%, 0)), radial-gradient(farthest-side at right 75%, hsla(158, 60%, 46%, 0.2), hsla(158, 60%, 46%, 0));
   background-color: hsl(225, 51%, 99%);
   color: hsl(225, 51%, 15%);
+  padding: 0 10px;
 }
 ul,
 p,
@@ -155,15 +156,6 @@ section:first-child article {
   html {
     --pagePadding: 30px;
     font-size: 1em;
-  }
-  main {
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 0 3px hsla(225, 51%, 50%, 0.1);
-  }
-  article {
-    margin-top: 0;
-    background: none;
-    box-shadow: none;
   }
   h1 {
     font-size: 3rem;
